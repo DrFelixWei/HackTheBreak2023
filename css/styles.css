@@ -3,7 +3,11 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 
-    margin: 1em;
+    background-image: url("/imgs/page2_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
 }
 
 #page2_title {
@@ -23,9 +27,9 @@ body {
 
 }
 #page2_container > * {
-    background-color: grey;
+    background-color: lightblue;
     color: white;
-    opacity: 0.5;
+    opacity: 0.8;
     
     display: flex;
     justify-content: center;

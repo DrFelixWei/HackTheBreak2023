@@ -1,3 +1,8 @@
+html {
+    background-image: url("/imgs/page2_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 body {
     font-family: sans-serif;
     /* font-weight: bold; */
@@ -12,6 +17,7 @@ body {
 
 #page2_title {
     text-align: center;
+    /* padding-top: 100pt; */
 }
 
 #page2_container {

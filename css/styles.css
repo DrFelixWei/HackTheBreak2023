@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin: 1em;
+}
+
+#page2_title {
+    text-align: center;
+}
+
+#page2_container {
+    display: grid;
+    height: 80vh;
+    gap:30px;
+    grid-template-areas: 
+       "1fr 1fr 1fr"
+       "1fr 1fr 1fr"
+       "1fr 1fr 1fr";
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+#page2_container > * {
+    background-color: grey;
+    color: white;
+    opacity: 0.5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1em;
+
+    grid-row: auto;
+    grid-column: auto;
+}

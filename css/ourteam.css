@@ -23,7 +23,7 @@ body {
 }
 
 .member-cards:hover {
-    box-shadow: 0 0px 13px rgba(0, 132, 255, 0.8);
+    box-shadow: 0 0px 13px rgba(0, 132, 255, 0.5);
 }
 
 #our-team {

@@ -40,3 +40,15 @@ body {
     grid-row: auto;
     grid-column: auto;
 }
+
+#navLeft {
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+}
+
+#navRight {
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+}

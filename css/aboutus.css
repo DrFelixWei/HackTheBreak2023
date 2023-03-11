@@ -1,0 +1,13 @@
+body, html {
+    background-color: darkslategrey;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "description hero";
+}
+
+a:hover{
+    background-color: white;
+}

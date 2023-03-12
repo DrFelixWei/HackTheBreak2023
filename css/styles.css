@@ -67,6 +67,7 @@ body {
     height: fit-content;
     margin-left: 10vw;
     margin-right: 10vw;
+    padding: 10px;
 }
 
 #title {
@@ -249,3 +250,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* for linkedin scraper */
+.course {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .course img {
+    margin-right: 10px;
+  }
+  
+  .course h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .course p {
+    margin: 0;
+  }

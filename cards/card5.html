@@ -17,3 +17,15 @@
         <button id="tag_algorithms" class="tagButton">#algorithms</button>
     </div>
 </a>
+<script>
+    const content1 = document.getElementById("content5");
+    const tags = document.querySelector(".tags");
+    tags.addEventListener("click", (event) => {
+        event.preventDefault();
+    });
+    content1.addEventListener("click", (event) => {
+        if (!tags.contains(event.target)) {
+            window.open(event.currentTarget.href, event.currentTarget.target);
+        }
+    });
+</script>

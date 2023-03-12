@@ -13,3 +13,15 @@
         <button id="tag_fullStack" class="tagButton">#fullStack</button>
     </div>
 </a>
+<script>
+    const content1 = document.getElementById("content4");
+    const tags = document.querySelector(".tags");
+    tags.addEventListener("click", (event) => {
+        event.preventDefault();
+    });
+    content1.addEventListener("click", (event) => {
+        if (!tags.contains(event.target)) {
+            window.open(event.currentTarget.href, event.currentTarget.target);
+        }
+    });
+</script>

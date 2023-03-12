@@ -89,6 +89,24 @@ body {
     height: fit-content;
 }
 
+.button {
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
 /* for responsive layout */
 @media (width > 1100px) {
     #index_container {
@@ -184,7 +202,7 @@ body {
 
 @media (width <=1100px) {
     #ourTeamContainer {
-        font-weight:normal;
+        font-weight: normal;
         background-color: rgb(255, 255, 255);
         display: grid;
         height: 800px;

@@ -14,8 +14,12 @@ body {
 /* ---------------------------------- */
 /* ------------ CONTENT ------------- */
 /* ---------------------------------- */
-* h1,
-h3 {
+h1 {
+    color: #DCF763;
+}
+
+
+h2 {
     color: #00d0f5;
 }
 
@@ -104,39 +108,53 @@ h3 {
 /* ---------------------------------- */
 
 @media (width > 800px) {
-
     #aboutUsContainer {
-        display: block;
-        background-image: url("/imgs/index_background(dark).jpg");
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        /* background-image: url("/imgs/index_background(dark).jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;*/
         background-color: #16273b;
-        background-position:left;
         color: white;
         opacity: 0.8;
-        display: block;
         /* width: calc(100% - 20vw); */
         width: 100vw;
-        height: 800px;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        height: auto;
         border-radius: 15px;
     }
 
+    #aboutus-text {
+        width: 75%;
+        grid-column: 1;
+        grid-row: 1;
+        padding: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #aboutus-bg {
+        width: 100%;
+        height: auto;
+        grid-row: 1;
+        grid-column: 2;
+    }
+
     #aboutUsTitle {
-        font-size: 80px;
-        /* position: relative;
-        left: 5vw; */
+        font-size: 65px;
         text-transform: uppercase;
-        margin: 0;
-        padding: 0;
+        margin-bottom: 0;
+    }
+
+    #aboutUs-subheading {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #aboutUsDescription {
-        padding: 10px;
-        width: 45%;
         color: rgb(219, 219, 219);
-        text-align: center;
+        text-align: left;
+        font-weight: lighter;
     }
 
     #index_container {

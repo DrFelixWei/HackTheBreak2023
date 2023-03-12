@@ -14,29 +14,7 @@ body {
     background-attachment: fixed;
 }
 
-/* for nav buttons */
-#navLeft {
-    position: fixed;
-    bottom: 50%;
-    left: 5%;
-}
 
-#navRight {
-    position: fixed;
-    bottom: 50%;
-    right: 5%;
-}
-@keyframes jump {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-}
-#navLeft:hover {
-    animation: jump 0.5s;
-}
-#navRight:hover {
-    animation: jump 0.5s;
-}
 
 /* for main contents */
 #aboutUsContainer {
@@ -68,13 +46,12 @@ body {
     background-color: lightblue;
     color: white;
     opacity: 0.8;
-    
     display: block;
     max-width: 100%;
     max-height: 100%;
-    /* overflow: auto; */
     width: fit-content;
-    height: fit-content;
+    height: 300px;
+    overflow: auto;
 }
 
 /* for responsive layout */
@@ -114,6 +91,9 @@ body {
     justify-content: center;
     justify-items: center;
     text-align: center;
+    width: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 .member-pics {
     width: 180px;
@@ -132,7 +112,6 @@ body {
     margin-right: 15px;
     padding: 20px;
     height: 400px;
-    
 }
 #member1 {
     grid-row: 2;
@@ -145,4 +124,29 @@ body {
 #member1 {
     grid-row: 2;
     grid-column: 3;
+}
+
+
+/* for nav buttons */
+#navLeft {
+    position: fixed;
+    bottom: 50%;
+    left: 5%;
+}
+
+#navRight {
+    position: fixed;
+    bottom: 50%;
+    right: 5%;
+}
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+#navLeft:hover {
+    animation: jump 0.5s;
+}
+#navRight:hover {
+    animation: jump 0.5s;
 }

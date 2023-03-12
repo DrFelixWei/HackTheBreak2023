@@ -58,7 +58,8 @@ body {
 /* ---------------------------------- */
 /* ------------ CONTENT ------------- */
 /* ---------------------------------- */
-* h1, h3 {
+* h1,
+h3 {
     color: #00A7E1;
 }
 
@@ -74,6 +75,9 @@ body {
     border-color: #2f2f3c;
     border-width: 1px;
     box-shadow: 0 0px 10px rgba(24, 24, 24, 0.1);
+    width: 270px;
+
+
 }
 
 .content-cards:hover {
@@ -94,10 +98,14 @@ body {
     width: 8px;
     height: 8px;
 }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border-radius: 4px;
+
+#title {
+    font-size: 80px;
+    position: relative;
+    left: 5vw;
+    text-transform: uppercase;
+    margin:0;
+    padding:0;
 }
   
   ::-webkit-scrollbar-track {
@@ -120,11 +128,10 @@ body {
     color: white;
     opacity: 0.8;
     display: block;
-    /* width: fit-content; */
     max-width: 100%;
-    height: 300px;
+    max-height: 100%;
+    width: fit-content;
     border-radius: 15px;
-    /* overflow-y: auto; */
 }
 
 /* .button {
@@ -145,22 +152,24 @@ body {
     color: #FF9B42;
 } */
 
-@media (width > 800px) {
+@media (max-width: 1200px) {
     #index_container {
         display: grid;
         gap: 30px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 340px 340px;
+        grid-template-rows: 1fr 1fr 1fr;
         margin-left: 10vw;
         margin-right: 10vw;
         margin-top: 60px;
         margin-bottom: 60px;
+        align-items: center;
     }
+
     #aboutUsContainer {
         display: block;
         background-image: url("/imgs/index_background.jpg");
-            /* background-repeat:no-repeat; */
-            background-size: 100% 100%;
+        /* background-repeat:no-repeat; */
+        background-size: 100% 100%;
         color: white;
         opacity: 0.8;
         display: block;
@@ -170,38 +179,44 @@ body {
         margin-right: 10vw;
         border-radius: 15px;
     }
+
     #aboutUsTitle {
         font-size: 80px;
         position: relative;
         left: 5vw;
         text-transform: uppercase;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
     }
+
     #aboutUsDescription {
         padding: 10px;
         width: 45%;
-        color: midnightblue;   
+        color: midnightblue;
         text-align: center;
     }
+
 }
 
-@media (width <=800px) {
+@media (width > 1200px) {
     #index_container {
         display: grid;
-        height: auto;
         gap: 30px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        grid-template-columns: 340px 340px 340px;
+        grid-template-rows: 1fr 1fr;
         margin-left: 10vw;
         margin-right: 10vw;
-        margin-bottom: 10px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        align-items: center;
     }
+
     #aboutUsContainer {
         display: block;
-        background-image: url("/imgs/index_background2.jpg");
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
+        background-image: url("/imgs/index_background.jpg");
+        /* background-repeat:no-repeat; */
+        background-size: 100% 100%;
         color: white;
         opacity: 0.8;
         display: block;
@@ -211,19 +226,70 @@ body {
         margin-right: 10vw;
         border-radius: 15px;
     }
+
+    #aboutUsTitle {
+        font-size: 80px;
+        position: relative;
+        left: 5vw;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    #aboutUsDescription {
+        padding: 10px;
+        width: 45%;
+        color: midnightblue;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    #index_container {
+        display: grid;
+        height: auto;
+        width: 100vw;
+        gap: 30px;
+        grid-template-columns: 380px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 10px;
+    }
+
+    .content-cards {
+        width: 320px;
+    }
+
+    #aboutUsContainer {
+        display: block;
+        background-image: url("/imgs/index_background2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        opacity: 0.8;
+        display: block;
+        width: calc(100% - 20vw);
+        height: 100%;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        border-radius: 15px;
+    }
+
     #aboutUsTitle {
         font-size: 40px;
         position: relative;
         text-transform: uppercase;
         text-align: center;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         /* padding-bottom: 500px; */
         /* margin-bottom: 500px; */
     }
+
     #aboutUsDescription {
         padding: 10px;
-        color: midnightblue;   
+        color: midnightblue;
         text-align: center;
         padding-top: 250px;
     }
@@ -234,8 +300,8 @@ body {
 /* ------------ Our Team ------------ */
 /* ---------------------------------- */
 .member-pics {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
@@ -268,7 +334,7 @@ body {
         display: grid;
         height: 600px;
         width: 100vw;
-        grid-template-columns: 275px 275px 275px;
+        grid-template-columns: 250px 250px 250px;
         grid-template-rows: 110px 400px;
         padding-top: 50px;
         justify-content: center;
@@ -278,8 +344,8 @@ body {
 
     .member-cards {
         padding: 25px;
-        height: 280px;
-        width: 200px;
+        height: 260px;
+        width: 170px;
         color: black;
         background-color: #454557;
         border-style: solid;

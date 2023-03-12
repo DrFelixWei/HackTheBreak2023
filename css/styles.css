@@ -418,12 +418,12 @@ body {
 /* ---------------------------------- */
 
 #footer > * {
-    background-color: rgb(18, 19, 30);
+    background-color: #16273c;
     display: flex;
     height: 50px;
     width: 100%;
     position: absolute;
-    color: #144750;
+    color:#00d0f5;
     text-align: center;
     font-weight: lighter;
     font-size: 10pt;

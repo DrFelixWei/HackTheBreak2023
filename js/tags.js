@@ -50,6 +50,14 @@ setTimeout(function() {
       });
     }
 
+    // send user back to top of cards
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    const y = vw <= 800 ? 1000 : 650;
+    window.scrollTo({
+      top: y,
+      behavior: "smooth"
+    });
+
     console.log("cards.js ran successfully.");
   }
 

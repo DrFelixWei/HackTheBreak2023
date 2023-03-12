@@ -79,6 +79,8 @@ body {
     height: 350px;
     border-radius: 15px;
     
+    text-decoration: none;
+    background-color: #454557;
     padding: 35px;
 
     text-decoration: none;
@@ -108,12 +110,12 @@ body {
 }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #333;
+    background-color: #4b4b4b;
     border-radius: 4px;
 }
   
   ::-webkit-scrollbar-track {
-    background-color: #eee;
+    background-color: #eeeeee00;
 }
 /* Hide the scrollbar */
 ::-webkit-scrollbar {

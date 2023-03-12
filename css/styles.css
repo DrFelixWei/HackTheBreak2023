@@ -19,8 +19,7 @@ body {
     background-color: #25283D;
 }
 
-
-#navRight {
+/* #navRight {
     position: fixed;
     bottom: 50%;
     right: 5%;
@@ -30,7 +29,7 @@ body {
     position: fixed;
     bottom: 50%;
     left: 5%;
-}
+} */
 
 @keyframes jump {
     0% {
@@ -181,14 +180,14 @@ body {
 
 @media (width > 1100px) {
     #ourTeamContainer {
-        margin-top: 40px;
+        background-color: #f9f9f9;
+        padding-top: 40px;
         font-weight: normal;
-        background-color: darkcyan;
         display: grid;
-        height: 800px;
+        height: 600px;
         width: 100vw;
         grid-template-columns: 275px 275px 275px;
-        grid-template-rows: 200px 600px;
+        grid-template-rows: 110px 400px;
         padding-top: 50px;
         justify-content: center;
         justify-items: center;
@@ -200,6 +199,11 @@ body {
         height: 270px;
         width: 200px;
         color: black;
+        background-color: white;
+        border-style: solid;
+        border-color: rgb(236, 236, 236);
+        border-radius: 14px;
+        box-shadow: 0 0px 8px rgba(81, 81, 81, 0.1);
     }
 
     #our-team {
@@ -232,18 +236,42 @@ body {
         /* height: 800px; */
         width: 100vw;
         grid-template-columns: 350px;
-        padding-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 60px;
         justify-content: center;
         justify-items: center;
         text-align: center;
     }
 
     .member-cards {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 45% 55%;
         margin: 12px;
         padding: 20px;
-        height: 270px;
-        width: 250px;
+        height: 90px;
+        width: 300px;
+        background-color: white;
         color: black;
+        border-style: solid;
+        border-color: rgb(236, 236, 236);
+        border-radius: 14px;
+        box-shadow: 0 0px 8px rgba(81, 81, 81, 0.1);
+    }
+
+    .member-pics {
+        grid-column: 1;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .member-name {
+        grid-column: 2;
+    }
+
+    .member-description {
+        grid-column: 2;
     }
 
 }
@@ -258,7 +286,7 @@ body {
     height: 50px;
     width: 100%;
     position: absolute;
-    color: rgb(216, 216, 216);
+    color: rgb(232, 232, 232);
     text-align: center;
     font-weight:lighter;
     font-size: 10pt;

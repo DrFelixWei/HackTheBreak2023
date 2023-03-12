@@ -213,10 +213,6 @@ body {
         margin-bottom: 10px;
     }
 
-    .content-cards {
-        height: 250px;
-    }
-
     #aboutUsContainer {
         display: grid;
         grid-template-columns: 1fr;

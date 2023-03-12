@@ -93,7 +93,7 @@ body {
 }
 
 .content-cards:hover {
-    box-shadow: 0 0px 13px #DCF763;
+    box-shadow: 0 0px 13px #dcf763ab;
     border-radius: 15px;
 }
 
@@ -102,6 +102,20 @@ body {
     height: 140px;
     overflow-y: auto;
     scrollbar-color: dark;
+}
+
+#aboutUsContainer>p {
+    padding: 10px;
+    color: #DCF763;
+}
+
+#title {
+    font-size: 80px;
+    position: relative;
+    left: 5vw;
+    text-transform: uppercase;
+    margin:0;
+    padding:0;
 }
 
 #index_container>* {
@@ -230,7 +244,7 @@ body {
 }
 
 .member-cards:hover {
-    box-shadow: 0 0px 13px #DCF763;
+    box-shadow: 0 0px 13px #dcf763ab;
     border-radius: 14px;
 }
 

@@ -82,10 +82,31 @@ body {
     color: #DCF763
 }
 
+.content-cards {
+    text-decoration: none;
+    padding: 35px;
+    height: 250px;
+    border-style: solid;
+    border-color: #2f2f3c;
+    border-width: 1px;
+    box-shadow: 0 0px 10px rgba(24, 24, 24, 0.1);
+}
+
+.content-cards:hover {
+    box-shadow: 0 0px 13px #DCF763;
+    border-radius: 15px;
+}
+
+.content-description {
+    font-weight: lighter;
+    height: 140px;
+    overflow-y: auto;
+    scrollbar-color: dark;
+}
+
 #index_container>* {
     grid-row: auto;
     grid-column: auto;
-    padding: 5px;
     background-color: #2E2E3A;
     color: white;
     opacity: 0.8;
@@ -93,8 +114,6 @@ body {
     max-width: 100%;
     max-height: 100%;
     width: fit-content;
-    height: 300px;
-    overflow: auto;
     border-radius: 15px;
 }
 
@@ -124,7 +143,8 @@ body {
         grid-template-rows: 1fr 1fr;
         margin-left: 10vw;
         margin-right: 10vw;
-        margin-bottom: 10px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     #aboutUsContainer {
         display: block;

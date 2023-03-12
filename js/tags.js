@@ -53,4 +53,5 @@ setTimeout(function() {
     console.log("cards.js ran successfully.");
   }
 
+
 }, 3000);

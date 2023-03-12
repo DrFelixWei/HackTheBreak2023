@@ -11,7 +11,18 @@
     <div class="tags">
         <button id="tag_MasterCard" class="tagButton">#MasterCard</button>
         <button id="tag_security" class="tagButton">#security</button>
-        
     </div>
 </a>
 
+<script>
+    const content1 = document.getElementById("content1");
+    const tags = document.querySelector(".tags");
+    tags.addEventListener("click", (event) => {
+        event.preventDefault();
+    });
+    content1.addEventListener("click", (event) => {
+        if (!tags.contains(event.target)) {
+            window.open(event.currentTarget.href, event.currentTarget.target);
+        }
+    });
+</script>

@@ -88,6 +88,8 @@ body {
     border-color: #2f2f3c;
     border-width: 1px;
     box-shadow: 0 0px 10px rgba(24, 24, 24, 0.1);
+
+    overflow: hidden;
 }
 
 .content-cards:hover {
@@ -166,10 +168,6 @@ body {
         margin-top: 60px;
         margin-bottom: 60px;
     }
-.content-cards {
-    height: auto;
-}
-
     #aboutUsContainer {
         display: block;
         background-image: url("/imgs/index_background.jpg");
@@ -376,6 +374,14 @@ body {
         grid-column: 2;
     }
 
+}
+
+.tags {
+    font-size: small;
+}
+.tags > input[type="button"] {
+    background-color: transparent;
+    border: none;
 }
 
 /* ---------------------------------- */

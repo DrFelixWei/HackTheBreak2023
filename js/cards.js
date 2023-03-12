@@ -1,3 +1,4 @@
+//  loads the page with all cards regardless of tags
 $(document).ready(function() {
   var numCards = $('#index_container > .card').length;
   for (var i = 1; i <= numCards; i++) {

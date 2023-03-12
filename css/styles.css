@@ -50,10 +50,12 @@ h3 {
     line-height: 17pt;
 }
 
-.content-cards {
+.content-cards-upper {
     grid-row: auto;
     grid-column: auto;
+}
 
+.content-cards {
     background-color: #2E2E3A;
     color: white;
     opacity: 0.8;
@@ -130,6 +132,7 @@ h3 {
 /* tags system */
 .tags {
     font-size: small;
+    transform: translateY(-30px) translateX(5px);
 }
 
 .tagButton {

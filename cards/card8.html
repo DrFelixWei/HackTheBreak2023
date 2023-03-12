@@ -1,26 +1,16 @@
-<a id="content8" class="content-cards" href="https://cloud.google.com/" target="_blank">
-    <h3>Google Cloud Computing</h3>
-    <img class="logo" src="imgs/google-logo.png" alt="provider">
-    <h4>Google</h4>
-    <p class="content-description">
-        Google Cloud Services can be a valuable skill to kickstart your career in cloud computing. With a wide range of
-        services and features, Google Cloud offers solutions for data storage, analysis, machine learning, and more.
-        <br>
-    </p>
+<a id="content8" >
+    <a class="content-cards" href="https://cloud.google.com/" target="_blank">
+        <h3>Google Cloud Computing</h3>
+        <img class="logo" src="imgs/google-logo.png" alt="provider">
+        <h4>Google</h4>
+        <p class="content-description">
+            Google Cloud Services can be a valuable skill to kickstart your career in cloud computing. With a wide range of
+            services and features, Google Cloud offers solutions for data storage, analysis, machine learning, and more.
+            <br>
+        </p>
+    </a>
     <div class="tags">
         <button id="tag_Google" class="tagButton">#Google</button>
-        <button id="tag_cloudComputing" class="tagButton">#cloudComputing</button>
+        <button id="tag_cloud_computing" class="tagButton">#cloud_computing</button>
     </div>
 </a>
-<script>
-    const content1 = document.getElementById("content8");
-    const tags = document.querySelector(".tags");
-    tags.addEventListener("click", (event) => {
-        event.preventDefault();
-    });
-    content1.addEventListener("click", (event) => {
-        if (!tags.contains(event.target)) {
-            window.open(event.currentTarget.href, event.currentTarget.target);
-        }
-    });
-</script>

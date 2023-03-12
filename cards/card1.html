@@ -1,28 +1,19 @@
-<a id="content1" class="content-cards" href="https://www.mastercard.com/globalrisk/en/resources/pci360.html" target="_blank">
-    <h3>(PCI 360) Mastercard Payment Card Industry Professional Certification</h3>
-    <img class="logo" src="imgs/Mastercard_2019_logo.svg" alt="provider">
-    <h4>MasterCard</h4>
-    <p class="content-description">
-        This certification is designed for professionals who work with payment card industry (PCI) compliance
-        standards.
-        It covers topics such as data security, risk assessment, and compliance requirements.
-        <br>
-    </p>
+<a id="content1" >
+    <a class="content-cards" href="https://www.mastercard.com/globalrisk/en/resources/pci360.html" target="_blank">
+        <h3>(PCI 360) Mastercard Payment Card Industry Professional Certification</h3>
+        <img class="logo" src="imgs/Mastercard_2019_logo.svg" alt="provider">
+        <h4>MasterCard</h4>
+        <p class="content-description">
+            This certification is designed for professionals who work with payment card industry (PCI) compliance
+            standards.
+            It covers topics such as data security, risk assessment, and compliance requirements.
+            <br>
+        </p>
+    </a>
     <div class="tags">
         <button id="tag_MasterCard" class="tagButton">#MasterCard</button>
         <button id="tag_security" class="tagButton">#security</button>
     </div>
 </a>
 
-<script>
-    const content1 = document.getElementById("content1");
-    const tags = document.querySelector(".tags");
-    tags.addEventListener("click", (event) => {
-        event.preventDefault();
-    });
-    content1.addEventListener("click", (event) => {
-        if (!tags.contains(event.target)) {
-            window.open(event.currentTarget.href, event.currentTarget.target);
-        }
-    });
-</script>
+

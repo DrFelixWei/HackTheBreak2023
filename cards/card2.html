@@ -1,30 +1,19 @@
 
-<a id="content2" class="content-cards" href="https://www.mastercard.com/content/mastercardcom/gateway/certifications.html" target="_blank">
-    <h3>Mastercard Payment Gateway Services Certification</h3>
-    <img class="logo" src="imgs/Mastercard_2019_logo.svg" alt="provider">
-    <h4>MasterCard</h4>
-    <p class="content-description">
-        This certification is designed for developers and technical professionals who are involved in payment
-        gateway integration.
-        It covers topics such as payment processing, fraud prevention, and security.
-        <br>
-    </p>
+<a id="content2">
+    <a class="content-cards" href="https://www.mastercard.com/content/mastercardcom/gateway/certifications.html" target="_blank">
+        <h3>Mastercard Payment Gateway Services Certification</h3>
+        <img class="logo" src="imgs/Mastercard_2019_logo.svg" alt="provider">
+        <h4>MasterCard</h4>
+        <p class="content-description">
+            This certification is designed for developers and technical professionals who are involved in payment
+            gateway integration.
+            It covers topics such as payment processing, fraud prevention, and security.
+            <br>
+        </p>
+    </a>
     <div class="tags">
         <button id="tag_MasterCard" class="tagButton">#MasterCard</button>
         <button id="tag_security" class="tagButton">#security</button>
         
     </div>
 </a>
-
-<script>
-    const content1 = document.getElementById("content2");
-    const tags = document.querySelector(".tags");
-    tags.addEventListener("click", (event) => {
-        event.preventDefault();
-    });
-    content1.addEventListener("click", (event) => {
-        if (!tags.contains(event.target)) {
-            window.open(event.currentTarget.href, event.currentTarget.target);
-        }
-    });
-</script>

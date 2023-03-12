@@ -1,26 +1,16 @@
-<a id="content7" class="content-cards" href="https://aws.amazon.com/training/?nc2=sb_tc" target="_blank">
-    <h3>Amazon Web Services</h3>
-    <img class="logo" src="imgs/amazon-logo.png" alt="provider">
-    <h4>Amazon</h4>
-    <p class="content-description">
-        Organizations need individuals with cloud skills to help transform their business. Our
-        content is created by experts at AWS and updated regularly so you can keep your cloud skills fresh.
-        <br>
-    </p>
+<a id="content7" >
+    <a class="content-cards" href="https://aws.amazon.com/training/?nc2=sb_tc" target="_blank">
+        <h3>Amazon Web Services</h3>
+        <img class="logo" src="imgs/amazon-logo.png" alt="provider">
+        <h4>Amazon</h4>
+        <p class="content-description">
+            Organizations need individuals with cloud skills to help transform their business. Our
+            content is created by experts at AWS and updated regularly so you can keep your cloud skills fresh.
+            <br>
+        </p>
+    </a>
     <div class="tags">
         <button id="tag_Amazon" class="tagButton">#Amazon</button>
-        <button id="tag_cloudComputing" class="tagButton">#cloudComputing</button>
+        <button id="tag_cloud_computing" class="tagButton">#cloud_computing</button>
     </div>
 </a>
-<script>
-    const content1 = document.getElementById("content7");
-    const tags = document.querySelector(".tags");
-    tags.addEventListener("click", (event) => {
-        event.preventDefault();
-    });
-    content1.addEventListener("click", (event) => {
-        if (!tags.contains(event.target)) {
-            window.open(event.currentTarget.href, event.currentTarget.target);
-        }
-    });
-</script>

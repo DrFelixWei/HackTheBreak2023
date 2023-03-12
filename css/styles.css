@@ -183,7 +183,7 @@ body {
     #ourTeamContainer {
         margin-top: 40px;
         font-weight: normal;
-        background-color: cyan;
+        background-color: darkcyan;
         display: grid;
         height: 800px;
         width: 100vw;
@@ -253,7 +253,7 @@ body {
 /* ---------------------------------- */
 
 #footer {
-    background-color: #FF9B42;
+    background-color: #2E2E3A;
     display: flex;
     height: 50px;
     width: 100%;

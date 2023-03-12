@@ -5,6 +5,7 @@ html {
     background-size: 100%;
     background-attachment: fixed;
 }
+
 body {
     font-family: sans-serif;
     font-weight: bold;
@@ -15,6 +16,33 @@ body {
 }
 
 
+#navRight {
+    position: fixed;
+    bottom: 50%;
+    right: 5%;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#navLeft:hover {
+    animation: jump 0.5s;
+}
+
+#navRight:hover {
+    animation: jump 0.5s;
+}
 
 /* for main contents */
 #aboutUsContainer {
@@ -22,7 +50,7 @@ body {
     background-color: lightblue;
     color: white;
     opacity: 0.8;
-    
+
     display: block;
     max-width: 100%;
     max-height: 100%;
@@ -39,7 +67,7 @@ body {
     text-transform: uppercase;
 }
 
-#index_container > * {
+#index_container>* {
     grid-row: auto;
     grid-column: auto;
     padding: 5px;
@@ -59,7 +87,7 @@ body {
     #index_container {
         display: grid;
         height: 90vh;
-        gap:30px;
+        gap: 30px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin-left: 10vw;
@@ -67,11 +95,12 @@ body {
 
     }
 }
-@media (width <= 1100px) {
+
+@media (width <=1100px) {
     #index_container {
         display: grid;
         height: 90vh;
-        gap:30px;
+        gap: 30px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         margin-left: 10vw;
@@ -79,74 +108,100 @@ body {
     }
 }
 
-/* for our team */
-#ourTeamContainer {
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    height: 800px;
-    width: 100vw;
-    grid-template-columns: 275px 275px 275px;
-    grid-template-rows: 200px 600px;
-    padding-top: 50px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    width: 100%;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
+
+/* ------------------------ */
+/* ----- for our team ----- */
+/* ------------------------ */
 .member-pics {
     width: 180px;
     height: 180px;
     border-radius: 50%;
 }
+
 .member-cards:hover {
     box-shadow: 0 0px 13px rgba(0, 132, 255, 0.8);
-}
-#our-team {
-    grid-row: 1;
-    grid-column: 1 / span 3;
-}
-.member-cards {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 20px;
-    height: 400px;
-}
-#member1 {
-    grid-row: 2;
-    grid-column: 1;
-}
-#member2 {
-    grid-row: 2;
-    grid-column: 2;
-}
-#member1 {
-    grid-row: 2;
-    grid-column: 3;
+    border-radius: 14px;
 }
 
+@media (width > 1100px) {
+    #ourTeamContainer {
+        font-weight: normal;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        height: 800px;
+        width: 100vw;
+        grid-template-columns: 275px 275px 275px;
+        grid-template-rows: 200px 600px;
+        padding-top: 50px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
 
-/* for nav buttons */
-#navLeft {
-    position: fixed;
-    bottom: 50%;
-    left: 5%;
+    #our-team {
+        grid-row: 1;
+        grid-column: 1 / span 3;
+    }
+
+    .member-cards {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 20px;
+        height: 410px;
+        color: black;
+    }
+
+    .member-cards:link {
+        text-decoration: none;
+    }
+
+    .member-cards:visited {
+        text-decoration: none;
+    }
+
+    #member1 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #member2 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #member3 {
+        grid-row: 2;
+        grid-column: 3;
+    }
 }
 
-#navRight {
-    position: fixed;
-    bottom: 50%;
-    right: 5%;
-}
-@keyframes jump {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-}
-#navLeft:hover {
-    animation: jump 0.5s;
-}
-#navRight:hover {
-    animation: jump 0.5s;
+@media (width <=1100px) {
+    #ourTeamContainer {
+        font-weight:normal;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        height: 800px;
+        width: 100vw;
+        grid-template-columns: 350px;
+        padding-top: 50px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .member-cards {
+        margin: 15px;
+        padding: 20px;
+        height: 380px;
+        color: black;
+    }
+
+    .member-cards:link {
+        text-decoration: none;
+    }
+
+    .member-cards:visited {
+        text-decoration: none;
+    }
+
 }

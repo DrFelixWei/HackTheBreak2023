@@ -1,9 +1,10 @@
 /* backgrounld image */
 html {
-    background-image: url("/imgs/index_background.jpg");
+    /* background-image: url("/imgs/index_background.jpg"); */
     background-repeat: repeat-y;
     background-size: 100%;
     background-attachment: fixed;
+    background-color: #25283D;
 }
 
 body {
@@ -11,10 +12,11 @@ body {
     font-weight: bold;
     margin: 0;
     padding: 0;
-    background-image: url("/imgs/index_background.jpg");
+    /* background-image: url("/imgs/index_background.jpg"); */
     background-repeat: repeat-y;
     background-size: 100%;
     background-attachment: fixed;
+    background-color: #25283D;
 }
 
 
@@ -66,10 +68,20 @@ body {
     margin-left: 10vw;
     margin-right: 10vw;
     border-radius: 15px;
+    background-color: #2E2E3A;
+}
+
+* h1, h3 {
+    color: #00A7E1;
+}
+
+* p {
+    color: #DCF763
 }
 
 #aboutUsContainer > p {
     padding: 10px;
+    color: #DCF763;
 }
 
 #title {
@@ -82,7 +94,7 @@ body {
     grid-row: auto;
     grid-column: auto;
     padding: 5px;
-    background-color: lightblue;
+    background-color: #2E2E3A;
     color: white;
     opacity: 0.8;
     display: block;
@@ -96,8 +108,8 @@ body {
 
 .button {
     background-color: transparent;
-    border: 2px solid #4CAF50;
-    color: #4CAF50;
+    border: 2px solid white;
+    color: #25283D;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -108,7 +120,7 @@ body {
 }
 
 .button:hover {
-    background-color: #4CAF50;
+    background-color: #2E2E3A;
     color: white;
 }
 
@@ -171,7 +183,7 @@ body {
     #ourTeamContainer {
         margin-top: 40px;
         font-weight: normal;
-        background-color: rgb(255, 255, 255);
+        background-color: cyan;
         display: grid;
         height: 800px;
         width: 100vw;
@@ -215,7 +227,7 @@ body {
     #ourTeamContainer {
         margin-top: 40px;
         font-weight: normal;
-        background-color: rgb(255, 255, 255);
+        background-color: cyan;
         display: grid;
         /* height: 800px; */
         width: 100vw;
@@ -241,7 +253,7 @@ body {
 /* ---------------------------------- */
 
 #footer {
-    background-color: rgb(62, 97, 252);
+    background-color: #FF9B42;
     display: flex;
     height: 50px;
     width: 100%;

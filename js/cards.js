@@ -1,10 +1,14 @@
 //  loads the page with all cards regardless of tags
 $(document).ready(function() {
-
-  
-  var numberOfCards = $('#index_container > .card').length;
-  numberOfCards = 6;
-  console.log(numberOfCards);
+  // get number of card.html files to put on page
+  var numberOfCards = 0;
+  $.ajax({
+    url: '/cards/',
+    async: false,
+    success: function(data) {
+      numberOfCards = $(data).find('a[href$=".html"]').length;
+    }
+  });
 
   // creates placeholders for cards
   let cardsPlaceholder = "";

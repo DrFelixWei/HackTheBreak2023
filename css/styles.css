@@ -50,6 +50,18 @@ h3 {
     line-height: 17pt;
 }
 
+#get-started {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    background: linear-gradient(#00d9ff, #3059bf);
+    scroll-behavior: smooth;
+}
+
 .content-cards-upper {
     grid-row: auto;
     grid-column: auto;
@@ -129,6 +141,7 @@ h3 {
     display: block;
 }
 
+
 /* tags system */
 .tags {
     font-size: small;
@@ -138,6 +151,7 @@ h3 {
 .tagButton {
     background-color: transparent;
     border: none;
+    color: white;
 }
 
 .tagButton:hover {
@@ -197,18 +211,6 @@ h3 {
         color: rgb(219, 219, 219);
         text-align: left;
         font-weight: lighter;
-    }
-
-    #get-started {
-        text-decoration: none;
-        color: white;
-        width: 100px;
-        height: 35px;
-        border-radius: 5px;
-        border: none;
-        margin-top: 20px;
-        background: linear-gradient(#00d9ff, #3059bf);
-        scroll-behavior: smooth;
     }
 
     #index_container {
@@ -287,17 +289,6 @@ h3 {
         font-weight: lighter;
     }
 
-    #get-started {
-        text-decoration: none;
-        color: white;
-        width: 100px;
-        height: 35px;
-        border-radius: 5px;
-        border: none;
-        margin-top: 20px;
-        background: linear-gradient(#00d9ff, #3059bf);
-        scroll-behavior: smooth;
-    }
 }
 
 

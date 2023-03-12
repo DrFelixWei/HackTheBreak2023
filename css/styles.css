@@ -109,7 +109,7 @@ body {
 .button {
     background-color: transparent;
     border: 2px solid white;
-    color: #25283D;
+    color: #FF9B42;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -120,8 +120,8 @@ body {
 }
 
 .button:hover {
-    background-color: #2E2E3A;
-    color: white;
+    background-color: white;
+    color: #FF9B42;
 }
 
 /* for responsive layout */
@@ -167,7 +167,6 @@ body {
 }
 
 .member-description {
-    color: rgb(102, 102, 102);
     font-size: 11pt;
 }
 
@@ -183,7 +182,7 @@ body {
     #ourTeamContainer {
         margin-top: 40px;
         font-weight: normal;
-        background-color: cyan;
+        background-color: #2E2E3A;
         display: grid;
         height: 800px;
         width: 100vw;
@@ -227,7 +226,7 @@ body {
     #ourTeamContainer {
         margin-top: 40px;
         font-weight: normal;
-        background-color: cyan;
+        background-color: #2E2E3A;
         display: grid;
         /* height: 800px; */
         width: 100vw;
@@ -253,7 +252,6 @@ body {
 /* ---------------------------------- */
 
 #footer {
-    background-color: #FF9B42;
     display: flex;
     height: 50px;
     width: 100%;

@@ -108,7 +108,7 @@ body {
 .button {
     background-color: transparent;
     border: 2px solid white;
-    color: #FF9B42;
+    color: green;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -281,6 +281,7 @@ body {
 /* ---------------------------------- */
 
 #footer {
+    background-color: #2E2E3A;
     display: flex;
     height: 50px;
     width: 100%;
@@ -292,3 +293,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* for linkedin scraper */
+.course {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .course img {
+    margin-right: 10px;
+  }
+  
+  .course h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .course p {
+    margin: 0;
+  }

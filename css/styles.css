@@ -2,6 +2,10 @@
 /* ------------ BACKGROUND ------------ */
 /* ---------------------------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
     font-weight: bold;
@@ -20,6 +24,11 @@ body {
 
 * p {
     color: #DCF763
+}
+
+#get-started:hover {
+    cursor: pointer;
+    color: rgb(206, 206, 206);
 }
 
 .content-cards {
@@ -122,16 +131,11 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        /* background-image: url("/imgs/index_background(dark).jpg");
-        background-repeat: no-repeat;
-        background-size: contain;*/
         background-color: #16273b;
         color: white;
         opacity: 0.8;
-        /* width: calc(100% - 20vw); */
         width: 100vw;
         height: auto;
-        border-radius: 15px;
     }
 
     #aboutus-text {
@@ -139,15 +143,17 @@ body {
         grid-column: 1;
         grid-row: 1;
         padding: 15%;
+        padding-left: 17%;
         align-items: center;
         justify-content: center;
     }
 
     #aboutus-bg {
-        width: 100%;
+        width: 90%;
         height: auto;
         grid-row: 1;
         grid-column: 2;
+        align-self: center;
     }
 
     #aboutUsTitle {
@@ -167,6 +173,18 @@ body {
         font-weight: lighter;
     }
 
+    #get-started {
+        text-decoration: none;
+        color:white;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        background: linear-gradient(#00d9ff, #3059bf);
+        scroll-behavior: smooth;
+    }
+
     #index_container {
         display: grid;
         gap: 30px;
@@ -175,7 +193,7 @@ body {
         grid-template-rows: 1fr 1fr;
         padding-left: 10vw;
         padding-right: 10vw;
-        margin-top: 60px;
+        padding-top: 60px;
         margin-bottom: 60px;
     }
 }

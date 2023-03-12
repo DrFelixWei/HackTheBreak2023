@@ -162,8 +162,9 @@ body {
     #index_container {
         display: grid;
         gap: 30px;
+        /* future -> make grid dynamic to however many cards we want to load */
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
         margin-left: 10vw;
         margin-right: 10vw;
         margin-top: 60px;
@@ -205,7 +206,7 @@ body {
         height: auto;
         gap: 30px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
         margin-left: 10vw;
         margin-right: 10vw;
         margin-bottom: 10px;

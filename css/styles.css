@@ -131,7 +131,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        background-color: #16273b;
+        background-color: #16273c;
         color: white;
         opacity: 0.8;
         width: 100vw;
@@ -175,7 +175,7 @@ body {
 
     #get-started {
         text-decoration: none;
-        color:white;
+        color: white;
         width: 100px;
         height: 35px;
         border-radius: 5px;
@@ -205,6 +205,7 @@ body {
         gap: 30px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 50px;
         padding-left: 10vw;
         padding-right: 10vw;
         margin-bottom: 10px;
@@ -215,30 +216,63 @@ body {
     }
 
     #aboutUsContainer {
-        display: block;
-        background-image: url("/imgs/index_background2.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        background-color: #16273c;
         color: white;
         opacity: 0.8;
-        display: block;
-        height: 100%;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        width: 100vw;
+        height: auto;
+    }
+
+    #aboutus-text {
+        width: 75%;
+        grid-column: 1;
+        grid-row: 2;
+        padding: 15%;
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #aboutus-bg {
+        width: 90%;
+        height: auto;
+        grid-row: 1;
+        grid-column: 1;
+        align-self: center;
+        margin: 5%;
+        margin-bottom: 0;
     }
 
     #aboutUsTitle {
-        font-size: 40px;
-        position: relative;
+        font-size: 55px;
         text-transform: uppercase;
-        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #aboutUs-subheading {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #aboutUsDescription {
-        padding: 10px;
-        color: rgb(202, 202, 202);
-        text-align: center;
-        padding-top: 250px;
+        color: rgb(219, 219, 219);
+        text-align: left;
+        font-weight: lighter;
+    }
+
+    #get-started {
+        text-decoration: none;
+        color: white;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        background: linear-gradient(#00d9ff, #3059bf);
+        scroll-behavior: smooth;
     }
 }
 

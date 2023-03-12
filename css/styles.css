@@ -14,8 +14,7 @@ body {
 /* ---------------------------------- */
 /* ------------ CONTENT ------------- */
 /* ---------------------------------- */
-* h1,
-h3 {
+* h1, h3 {
     color: #00d0f5;
 }
 
@@ -99,6 +98,21 @@ h3 {
     display: block;
 }
 
+/* tags system */
+.tags {
+    font-size: small;
+}
+
+.tagButton {
+    background-color: transparent;
+    border: none;
+}
+.tagButton:hover {
+    box-shadow: 0 0px 13px #dcf763;
+    border-radius: 15px;
+}
+
+
 /* ---------------------------------- */
 /* --------- MEDIA QUERIES ---------- */
 /* ---------------------------------- */
@@ -179,7 +193,6 @@ h3 {
         height: 100%;
         padding-left: 10vw;
         padding-right: 10vw;
-        border-radius: 15px;
     }
 
     #aboutUsTitle {
@@ -196,6 +209,7 @@ h3 {
         padding-top: 250px;
     }
 }
+
 
 
 /* ---------------------------------- */
@@ -329,15 +343,6 @@ h3 {
 
 }
 
-.tags {
-    font-size: small;
-}
-
-.tags>input[type="button"] {
-    background-color: transparent;
-    border: none;
-}
-
 /* ---------------------------------- */
 /* ------------- Footer ------------- */
 /* ---------------------------------- */
@@ -356,33 +361,3 @@ h3 {
     align-items: center;
 }
 
-/* for linkedin scraper */
-#linkedin-results {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.search-result {
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.search-result h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.search-result p {
-    margin: 0;
-}
-
-.search-result img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}

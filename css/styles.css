@@ -1,4 +1,6 @@
-/* background image */
+/* ---------------------------------- */
+/* ------------ BACKGROUND ------------ */
+/* ---------------------------------- */
 html {
     /* background-image: url("/imgs/index_background.jpg"); */
     background-repeat: repeat-y;
@@ -30,8 +32,7 @@ body {
     position: fixed;
     bottom: 50%;
     left: 5%;
-} */
-
+}
 @keyframes jump {
     0% {
         transform: translateY(0);
@@ -52,9 +53,11 @@ body {
 
 #navRight:hover {
     animation: jump 0.5s;
-}
+} */
 
-/* for main contents */
+/* ---------------------------------- */
+/* ------------ CONTENT ------------- */
+/* ---------------------------------- */
 #aboutUsContainer {
     display: block;
     background-color: lightblue;
@@ -127,7 +130,9 @@ body {
     color: #FF9B42;
 }
 
-/* for responsive layout */
+/* ------------------------------------------- */
+/* ------------ RESPONSIVE LAYOUT ------------ */
+/* ------------------------------------------- */
 @media (width > 900px) {
     #index_container {
         display: grid;

@@ -2,11 +2,11 @@ body {
     font-family: sans-serif;
 }
 
-.container {
+.ourTeamContainer {
     background-color: white;
     display: grid;
     height: 800px;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 275px 275px 275px;
     grid-template-rows: 200px auto;
     padding-top: 50px;
@@ -24,6 +24,7 @@ body {
 
 .member-cards:hover {
     box-shadow: 0 0px 13px rgba(0, 132, 255, 0.5);
+    border-radius: 12px;
 }
 
 #our-team {

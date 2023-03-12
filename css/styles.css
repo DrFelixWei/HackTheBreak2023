@@ -54,12 +54,33 @@ body {
 }
 
 /* for main contents */
+#aboutUsContainer {
+    display: block;
+    background-color: lightblue;
+    color: white;
+    opacity: 0.8;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 15px;
+    background-color: #2E2E3A;
+}
+
 * h1, h3 {
     color: #00A7E1;
 }
 
 * p {
     color: #DCF763
+}
+
+#aboutUsContainer > p {
+    padding: 10px;
+    color: #DCF763;
 }
 
 #title {
@@ -182,7 +203,7 @@ body {
 }
 
 .member-cards:hover {
-    box-shadow: 0 0px 13px rgba(0, 132, 255, 0.8);
+    box-shadow: 0 0px 13px #DCF763;
     border-radius: 14px;
 }
 
@@ -198,12 +219,15 @@ body {
     text-decoration: none;
 }
 
+.member-description {
+    color: rgb(187, 187, 187);
+}
+
 @media (width > 1100px) {
     #ourTeamContainer {
-        background-color: #f9f9f9;
+        background-color: #2E2E3A;
         padding-top: 40px;
         font-weight: normal;
-        background-color: #2E2E3A;
         display: grid;
         height: 600px;
         width: 100vw;
@@ -217,14 +241,15 @@ body {
 
     .member-cards {
         padding: 25px;
-        height: 270px;
+        height: 280px;
         width: 200px;
         color: black;
-        background-color: white;
+        background-color: #454557;
         border-style: solid;
-        border-color: rgb(236, 236, 236);
+        border-color: #2f2f3c;
         border-radius: 14px;
-        box-shadow: 0 0px 8px rgba(81, 81, 81, 0.1);
+        border-width: 1px;
+        box-shadow: 0 0px 10px rgba(24, 24, 24, 0.1);
     }
 
     #our-team {
@@ -267,17 +292,18 @@ body {
     .member-cards {
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-rows: 45% 55%;
+        grid-template-rows: 33% 67%;
         margin: 12px;
         padding: 20px;
         height: 90px;
         width: 300px;
-        background-color: white;
+        background-color: #454557;
         color: black;
         border-style: solid;
-        border-color: rgb(236, 236, 236);
+        border-color: #2f2f3c;
         border-radius: 14px;
-        box-shadow: 0 0px 8px rgba(81, 81, 81, 0.1);
+        border-width: 1px;
+        box-shadow: 0 0px 10px rgba(24, 24, 24, 0.1);
     }
 
     .member-pics {
@@ -302,14 +328,14 @@ body {
 /* ---------------------------------- */
 
 #footer {
-    background-color: #25283D;
+    background-color: rgb(18, 19, 30);
     display: flex;
     height: 50px;
     width: 100%;
     position: absolute;
     color: rgb(232, 232, 232);
     text-align: center;
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: 10pt;
     justify-content: center;
     align-items: center;
@@ -321,17 +347,17 @@ body {
     margin-bottom: 20px;
     padding: 10px;
     display: flex;
-  }
-  
-  .course img {
+}
+
+.course img {
     margin-right: 10px;
-  }
-  
-  .course h2 {
+}
+
+.course h2 {
     margin-top: 0;
     margin-bottom: 5px;
-  }
-  
-  .course p {
+}
+
+.course p {
     margin: 0;
-  }
+}

@@ -1,13 +1,6 @@
 /* ---------------------------------- */
 /* ------------ BACKGROUND ------------ */
 /* ---------------------------------- */
-html {
-    /* background-image: url("/imgs/index_background.jpg"); */
-    background-repeat: repeat-y;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-color: #25283D;
-}
 
 body {
     font-family: sans-serif;
@@ -15,50 +8,14 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 5px;
-    /* background-image: url("/imgs/index_background.jpg"); */
-    background-repeat: repeat-y;
-    background-size: 100%;
-    background-attachment: fixed;
     background-color: #25283D;
 }
-
-/* #navRight {
-    position: fixed;
-    bottom: 50%;
-    right: 5%;
-}
-
-#navLeft {
-    position: fixed;
-    bottom: 50%;
-    left: 5%;
-}
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-#navLeft:hover {
-    animation: jump 0.5s;
-}
-
-#navRight:hover {
-    animation: jump 0.5s;
-} */
 
 /* ---------------------------------- */
 /* ------------ CONTENT ------------- */
 /* ---------------------------------- */
-* h1, h3 {
+* h1,
+h3 {
     color: #00d0f5;
 }
 
@@ -78,7 +35,7 @@ body {
     max-width: 100%;
     height: 350px;
     border-radius: 15px;
-    
+
     text-decoration: none;
     background-color: #454557;
     padding: 35px;
@@ -102,10 +59,10 @@ body {
     font-weight: lighter;
     height: 120px;
     overflow-y: auto;
-    scrollbar-color: dark;
-    scrollbar-width: 3px;
-    padding-right: 14px;
-    color:rgb(187, 187, 187)
+    padding-right: 10px;
+    /* scrollbar-color: dark;
+    scrollbar-width: 3px; */
+    color: rgb(187, 187, 187)
 }
 
 .logo {
@@ -114,89 +71,84 @@ body {
     margin-right: 5px;
 }
 
-.content-cards > h4 {
-    display:inline;
+.content-cards>h4 {
+    display: inline;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
-  
-  ::-webkit-scrollbar-thumb {
+
+::-webkit-scrollbar-thumb {
     background-color: #a3a3a380;
     border-radius: 4px;
 }
-  
-  ::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
     background-color: #eeeeee00;
 }
+
 /* Hide the scrollbar */
 ::-webkit-scrollbar {
     display: none;
-  }
+}
+
 /* Show the scrollbar when hovering over the element */
 .content-description:hover::-webkit-scrollbar {
     display: block;
-  }
-
-/* .button {
-    background-color: transparent;
-    border: 2px solid white;
-    color: green;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 
-.button:hover {
-    background-color: white;
-    color: #FF9B42;
-} */
+/* ---------------------------------- */
+/* --------- MEDIA QUERIES ---------- */
+/* ---------------------------------- */
 
 @media (width > 800px) {
+
+    #aboutUsContainer {
+        display: block;
+        background-image: url("/imgs/index_background(dark).jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #16273b;
+        background-position:left;
+        color: white;
+        opacity: 0.8;
+        display: block;
+        /* width: calc(100% - 20vw); */
+        width: 100vw;
+        height: 800px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        border-radius: 15px;
+    }
+
+    #aboutUsTitle {
+        font-size: 80px;
+        /* position: relative;
+        left: 5vw; */
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    #aboutUsDescription {
+        padding: 10px;
+        width: 45%;
+        color: rgb(219, 219, 219);
+        text-align: center;
+    }
+
     #index_container {
         display: grid;
         gap: 30px;
         /* future -> make grid dynamic to however many cards we want to load */
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr; */
-        margin-left: 10vw;
-        margin-right: 10vw;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 10vw;
+        padding-right: 10vw;
         margin-top: 60px;
         margin-bottom: 60px;
-    }
-    #aboutUsContainer {
-        display: block;
-        background-image: url("/imgs/index_background.jpg");
-            /* background-repeat:no-repeat; */
-            background-size: 100% 100%;
-        color: white;
-        opacity: 0.8;
-        display: block;
-        width: calc(100% - 20vw);
-        height: 100%;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        border-radius: 15px;
-    }
-    #aboutUsTitle {
-        font-size: 80px;
-        position: relative;
-        left: 5vw;
-        text-transform: uppercase;
-        margin:0;
-        padding:0;
-    }
-    #aboutUsDescription {
-        padding: 10px;
-        width: 45%;
-        color: midnightblue;   
-        text-align: center;
     }
 }
 
@@ -206,9 +158,9 @@ body {
         height: auto;
         gap: 30px;
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
-        margin-left: 10vw;
-        margin-right: 10vw;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-left: 10vw;
+        padding-right: 10vw;
         margin-bottom: 10px;
     }
 
@@ -219,30 +171,27 @@ body {
     #aboutUsContainer {
         display: block;
         background-image: url("/imgs/index_background2.jpg");
-            background-repeat:no-repeat;
-            background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         color: white;
         opacity: 0.8;
         display: block;
-        width: calc(100% - 20vw);
         height: 100%;
-        margin-left: 10vw;
-        margin-right: 10vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
         border-radius: 15px;
     }
+
     #aboutUsTitle {
         font-size: 40px;
         position: relative;
         text-transform: uppercase;
         text-align: center;
-        margin:0;
-        padding:0;
-        /* padding-bottom: 500px; */
-        /* margin-bottom: 500px; */
     }
+
     #aboutUsDescription {
         padding: 10px;
-        color: midnightblue;   
+        color: rgb(202, 202, 202);
         text-align: center;
         padding-top: 250px;
     }
@@ -383,7 +332,8 @@ body {
 .tags {
     font-size: small;
 }
-.tags > input[type="button"] {
+
+.tags>input[type="button"] {
     background-color: transparent;
     border: none;
 }
@@ -410,30 +360,29 @@ body {
 #linkedin-results {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .search-result {
+}
+
+.search-result {
     width: calc(33.33% - 20px);
     margin: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
-  
-  .search-result h3 {
+}
+
+.search-result h3 {
     font-size: 18px;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 5px;
-  }
-  
-  .search-result p {
+}
+
+.search-result p {
     margin: 0;
-  }
-  
-  .search-result img {
+}
+
+.search-result img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-  }
-  
+}

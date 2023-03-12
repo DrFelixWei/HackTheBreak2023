@@ -50,6 +50,18 @@ setTimeout(function() {
       });
     }
 
+    // DIDN'T FINISH IN TIME
+    // Select all elements with class="tagClear"
+    // const clearTags = document.querySelectorAll('.tagClear');
+    // Loop through all buttons and add event listener to each one
+    // clearTags.forEach(clearTag => {
+    // clearTag.addEventListener('click', function() {
+    //   console.log("clear button working");
+    //   $.getScript('/js/cards.js');
+    // });
+    // });
+
+
     // send user back to top of cards
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     const y = vw <= 800 ? 1000 : 650;
@@ -61,5 +73,4 @@ setTimeout(function() {
     console.log("cards.js ran successfully.");
   }
 
-
-}, 3000);
+}, 1000);

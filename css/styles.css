@@ -147,14 +147,21 @@ h3 {
     font-size: small;
     transform: translateY(-30px) translateX(5px);
 }
-
 .tagButton {
     background-color: transparent;
     border: none;
     color: white;
 }
-
 .tagButton:hover {
+    box-shadow: 0 0px 13px #dcf763;
+    border-radius: 15px;
+}
+.tagClear {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.tagClear:hover {
     box-shadow: 0 0px 13px #dcf763;
     border-radius: 15px;
 }

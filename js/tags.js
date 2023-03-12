@@ -12,6 +12,7 @@ setTimeout(function() {
   // Handle click event
   function handleClick(event) {
     var numberOfCards = 0;
+    
     $.ajax({
       url: '/cards/',
       async: false,
@@ -22,15 +23,15 @@ setTimeout(function() {
           url: url,
           async: false,
           success: function(data){
-            if($(data).find('#tag_MasterCard').length){
+            if($(data).find('#'+event.target.id).length){
               numberOfCards++;
               }
             }
           });
         });
-      }
+        }
     });
-
+  
     // creates placeholders for cards
     let cardsPlaceholder = "";
     for (let n = 1; n <= numberOfCards; n++) {
@@ -49,6 +50,8 @@ setTimeout(function() {
       });
     }
     console.log("cards.js ran successfully.");
+
+
   }
 
 }, 3000);

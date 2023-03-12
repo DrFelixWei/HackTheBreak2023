@@ -141,6 +141,19 @@ body {
     border-radius: 14px;
 }
 
+.member-description {
+    color: rgb(102, 102, 102);
+    font-size: 11pt;
+}
+
+.member-cards:link {
+    text-decoration: none;
+}
+
+.member-cards:visited {
+    text-decoration: none;
+}
+
 @media (width > 1100px) {
     #ourTeamContainer {
         font-weight: normal;
@@ -156,25 +169,16 @@ body {
         text-align: center;
     }
 
-    #our-team {
-        grid-row: 1;
-        grid-column: 1 / span 3;
-    }
-
     .member-cards {
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 20px;
-        height: 410px;
+        padding: 25px;
+        height: 270px;
+        width: 200px;
         color: black;
     }
 
-    .member-cards:link {
-        text-decoration: none;
-    }
-
-    .member-cards:visited {
-        text-decoration: none;
+    #our-team {
+        grid-row: 1;
+        grid-column: 1 / span 3;
     }
 
     #member1 {
@@ -208,18 +212,11 @@ body {
     }
 
     .member-cards {
-        margin: 15px;
+        margin: 12px;
         padding: 20px;
-        height: 380px;
+        height: 270px;
+        width: 250px;
         color: black;
-    }
-
-    .member-cards:link {
-        text-decoration: none;
-    }
-
-    .member-cards:visited {
-        text-decoration: none;
     }
 
 }

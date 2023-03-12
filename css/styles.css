@@ -18,7 +18,7 @@ body {
 /* ---------------------------------- */
 /* ------------ CONTENT ------------- */
 /* ---------------------------------- */
-* h1, h3 {
+h3 {
     color: #00d0f5;
 }
 
@@ -26,9 +26,28 @@ body {
     color: #DCF763
 }
 
+#aboutUsTitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+#get-started {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 #get-started:hover {
     cursor: pointer;
     color: rgb(206, 206, 206);
+}
+
+#aboutUs-subheading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24pt;
+}
+
+#aboutUsDescription {
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 17pt;
 }
 
 .content-cards {
@@ -45,6 +64,7 @@ body {
     border-radius: 15px;
 
     text-decoration: none;
+    line-height: 15pt;
     background-color: #454557;
     padding: 35px;
 
@@ -116,6 +136,7 @@ body {
     background-color: transparent;
     border: none;
 }
+
 .tagButton:hover {
     box-shadow: 0 0px 13px #dcf763;
     border-radius: 15px;
@@ -164,7 +185,7 @@ body {
     }
 
     #aboutUs-subheading {
-        color:#00d0f5;
+        color: #00d0f5;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -253,7 +274,7 @@ body {
 
     #aboutUs-subheading {
         margin-top: 30px;
-        color:#00d0f5;
+        color: #00d0f5;
         margin-bottom: 30px;
     }
 
@@ -339,6 +360,8 @@ body {
     }
 
     #our-team {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #dcf763;
         grid-row: 1;
         grid-column: 1 / span 3;
     }
@@ -407,23 +430,27 @@ body {
         grid-column: 2;
     }
 
+    #our-team {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #dcf763;
+    }
 }
 
 /* ---------------------------------- */
 /* ------------- Footer ------------- */
 /* ---------------------------------- */
 
-#footer > * {
+#footer>* {
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: #16273c;
     display: flex;
     height: 50px;
     width: 100%;
     position: absolute;
-    color:#00d0f5;
+    color: #00d0f5;
     text-align: center;
     font-weight: lighter;
     font-size: 10pt;
     justify-content: center;
     align-items: center;
 }
-

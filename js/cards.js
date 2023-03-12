@@ -30,14 +30,3 @@ $(document).ready(function() {
   console.log("cards.js ran successfully.");
 });
 
-
-// for tags
-// document.querySelector(".tagButton").addEventListener("click", function (e) {
-//    event.stopPropagation();
-  
-  
-  // ajaxGET("/action?format=html", function (data) {
-  //     // console.log(data);
-  //     document.getElementById("action-html").innerHTML = data;
-  // });
-// });
